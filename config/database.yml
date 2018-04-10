@@ -1,0 +1,20 @@
+
+default: &default
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  pool: 5
+  username: yura
+  password: 123123
+
+development:
+  <<: *default
+  database: lesson_development
+
+test:
+  <<: *default
+  database: lesson_test
+
+production:
+  <<: *default
+  database: lesson_development
