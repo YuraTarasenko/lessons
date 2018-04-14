@@ -24,6 +24,7 @@ module Lessons
       g.helper      false
       g.javaScript  false
       g.stylesheets false
+      g.decorator   false
 
       g.template_engine :slim
       g.fixture_replacement :factory_bot, dir: "spec/factories"
