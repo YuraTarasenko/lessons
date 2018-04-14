@@ -26,7 +26,7 @@ module Lessons
       g.stylesheets false
 
       g.template_engine :slim
-      g.fixture_replacement :factory_girl, dir: "spec/factories"
+      g.fixture_replacement :factory_bot, dir: "spec/factories"
 
       g.text_framework :rspec,
         fixtures: true,
