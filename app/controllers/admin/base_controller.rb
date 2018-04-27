@@ -1,7 +1,7 @@
 class Admin::BaseController < ApplicationController
   layout 'admin'
 
-  before_action :set_main_menu, except: :destroy
+  before_action :set_main_menu
   before_action :set_active_menu_item, exept: :destroy
 
   private
