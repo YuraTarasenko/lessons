@@ -4,8 +4,9 @@ html
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
     title Lessons
     = csrf_meta_tags
-    = stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'admin', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'admin', media: 'all'
+    = javascript_include_tag 'admin'
+
   body
     = render 'admin/shared/main_menu'
     .container
