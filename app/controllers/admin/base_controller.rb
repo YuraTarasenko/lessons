@@ -1,6 +1,7 @@
 class Admin::BaseController < ApplicationController
   layout 'admin'
 
+  before_action :authenticate_admin!
   before_action :set_main_menu, exept: :destroy
   before_action :set_active_menu_item, exept: :destroy
 
